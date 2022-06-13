@@ -1,3 +1,4 @@
+import "../styles/login.css";
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
@@ -13,7 +14,7 @@ const Login = () => {
     const submit = data => {
         axios.post("https://ecommerce-api-react.herokuapp.com/api/v1/users/login", data)
             .then(res => {
-                console.log(res.data,data.token)
+                console.log(res.data, data.token)
                 localStorage.setItem("token", res.data.data.token)
                 navigate("/")
             })
@@ -31,30 +32,37 @@ const Login = () => {
 
 
     return (
-        <div>
+        <div className="loginContainer">
             <h1>Login</h1>
 
             <form className="usersForm" onSubmit={handleSubmit(submit)}>
-
-                <div>
-                    <label htmlFor="email">
-                        Email
-                    </label>
-                    <input
-                        {...register("email")}
-                        type="email"
-                        placeholder="Enter email"
-                    />
+                <h3>Welcome! Enter your email and password to continue</h3>
+                <div className="testDataInfo">
+                    <h5>Test Data</h5>
+                    <h6> email: george@gmail.com</h6>
+                    <h6> password: george123</h6>
                 </div>
-                <div>
-                    <label htmlFor="password">
-                        Password
-                    </label>
-                    <input
-                        {...register("password")}
-                        type="password"
-                        placeholder="Password"
-                    />
+                <div className="containerForm">
+                    <div className="labelInput" >
+                        <label htmlFor="email">
+                            Email
+                        </label>
+                        <input
+                            {...register("email")}
+                            type="email"
+                            placeholder="Enter email"
+                        />
+                    </div>
+                    <div className="labelInput">
+                        <label htmlFor="password">
+                            Password
+                        </label>
+                        <input
+                            {...register("password")}
+                            type="password"
+                            placeholder="Password"
+                        />
+                    </div>
                 </div>
                 <button className="btnForm" type="submit">Submit</button>
             </form>

@@ -1,15 +1,27 @@
 
-.containerHome {
-    margin: 30px;
-}
-
 .productDetailCont {
-    margin: 30px;
+    margin: 50px;
 }
 
+.productDetailCont input {
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 40px;
+    height: 25px;
 
+}
+
+.productDetailCont button {
+    width: 90px;
+    height: 22px;
+    border-radius: 8px;
+    background-color: coral;
+    cursor: pointer;
+
+}
 
 .productDetailCont h2 {
+    font-size: 26px;
     margin-top: 30px;
     margin-bottom: 20px;
     color: blue;

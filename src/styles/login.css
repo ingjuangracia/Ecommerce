@@ -1,0 +1,53 @@
+
+.loginContainer {
+    margin: 50px;
+}
+
+.containerForm label {
+    display: inline-block;
+    width: 80px;
+
+}
+
+.containerForm input {
+    width: 200px;
+}
+
+.testDataInfo {
+    
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: lightgray;
+    width: 200px;
+    height: 50px;
+}
+
+.usersForm {
+    margin-top: 30px;
+    background-color: coral;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.containerForm {
+    margin-top: 20px;
+
+}
+
+.labelInput {
+    margin: 10px;
+}
+
+.usersForm button {
+    background-color: blue;
+    color: white;
+    margin-left: 11px;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+}
+

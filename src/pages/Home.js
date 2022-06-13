@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/productCard.css";
+import "../styles/homeProdCard.css";
 import { useEffect } from 'react';
 import { filterCategory, filterHeadline, getProducts } from '../store/slices/products.slice';
 import { useDispatch } from 'react-redux';
