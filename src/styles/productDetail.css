@@ -1,0 +1,13 @@
+
+.productDetailCont h2 {
+    margin-bottom: 20px;
+}
+
+
+.imgProductDetail {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+
+
+}

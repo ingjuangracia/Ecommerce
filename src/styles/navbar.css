@@ -1,0 +1,50 @@
+.containerNavBar h1 {
+    margin: 10px 20px;
+    font-size: 40px;
+    color: coral
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    background-color: coral;
+    box-shadow: 2px 2px 5px 3px grey;
+    
+    
+}
+
+.menuBar {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.menuBar a {
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+    padding: 4px 10px;    
+}
+
+.menuBar li {
+    list-style: none;
+}
+
+.menuBar .active {
+    background-color: blue;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 20px;
+}
+
+
+.menuBar a:hover {
+    background-color: yellow;
+    color: black;
+    font-size: 18px ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px grey;
+    transition: ease-in .1s;
+}
+
