@@ -1,3 +1,4 @@
+import "../styles/purchases.css";
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPurchases } from '../store/slices/purchases.slice';

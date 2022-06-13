@@ -54,8 +54,7 @@ const Home = () => {
     console.log(categories)
 
     return (
-        <div>
-
+        <div className="containerHome">
             <ul className="contCategName">
                 <h2>Categories</h2>
                 {

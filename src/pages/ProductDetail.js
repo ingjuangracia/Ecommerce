@@ -62,14 +62,24 @@ const ProductDetail = () => {
             />
             <button onClick={addProductCart}>Add to Cart</button>
 
-            {
+            <h2>Discover Similar Items</h2>
 
-                productsList?.map(productList => (
-                    <li onClick={() => navigate(`/product/${productList.id}`)}>{productList.title}</li>
+            <ul className="ContainerCard">
+                {
+
+                    productsList?.map(productList => (
+                        <li className="productCard" onClick={() => navigate(`/product/${productList.id}`)}>
+                            
+                            <img className="imgCard" src={productList.productImgs[2]} alt="" />
+                            <h4>{productList.title}</h4>
+                            <h4> Price $ {product.price}</h4>
 
 
-                ))
-            }
+                        </li>
+
+                    ))
+                }
+            </ul>
 
 
         </div>
