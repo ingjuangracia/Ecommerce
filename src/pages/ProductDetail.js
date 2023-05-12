@@ -20,7 +20,7 @@ const ProductDetail = () => {
     const productsList = useSelector(state => state.products);
 
     useEffect(() => {
-        axios.get(`https://ecommerce-api-react.herokuapp.com/api/v1/products/`)
+        axios.get(`https://e-commerce-api.academlo.tech/api/v1/products`)
             .then(res => {
                 console.log(res.data.data.products)
                 res.data.data.products.find(productItem => productItem.id === Number(id))

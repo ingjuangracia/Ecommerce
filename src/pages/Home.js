@@ -37,7 +37,7 @@ const Home = () => {
     useEffect(() => {
         dispatch(getProducts());
 
-        axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/products/categories")
+        axios.get("https://e-commerce-api.academlo.tech/api/v1/products/categories")
             .then(res => setCategories(res.data.data.categories))
 
     }, [dispatch]);
@@ -81,12 +81,13 @@ const Home = () => {
                     products.map(product => (
                         <li className="productCard" key={product.id} onClick={() => navigate(`product/${product.id}`)}>
                             <img className="imgCard" src={product.productImgs[2]} alt="" />
-                            <h4>{product.title}</h4>
-                            <h4> Price $ {product.price}</h4>
+                            <h4 className='productCard-title'>{product.title}</h4>
+                            <h4 className='productCard-price'> Price $ {product.price}</h4>
                             <button onClick={addProductCart}>Add to Cart</button>
                         </li>
-
+                        
                     ))
+                   
 
 
 

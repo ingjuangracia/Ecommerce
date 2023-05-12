@@ -75,7 +75,7 @@
 .productCard {
     display: inline-block;
     width: 380px;
-    height: 300px;
+    height: 310px;
     padding: 20px;
     box-shadow: 2px 2px 4px 5px gray;
     margin: 15px;
@@ -89,8 +89,19 @@
     
 }
 
-.productCard h4 {
+.productCard-title {
     text-align: left;
+    font-size: 14px;
+  
+   
+}
+
+.productCard-price {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+    
+
 }
 
 .imgCard {

@@ -12,7 +12,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const submit = data => {
-        axios.post("https://ecommerce-api-react.herokuapp.com/api/v1/users/login", data)
+        axios.post("https://e-commerce-api.academlo.tech/api/v1/users/login", data)
             .then(res => {
                 console.log(res.data, data.token)
                 localStorage.setItem("token", res.data.data.token)
@@ -40,7 +40,7 @@ const Login = () => {
                 <div className="testDataInfo">
                     <h5>Test Data</h5>
                     <h6> email: george@gmail.com</h6>
-                    <h6> password: george123</h6>
+                    <h6> password: george1234</h6>
                 </div>
                 <div className="containerForm">
                     <div className="labelInput" >
