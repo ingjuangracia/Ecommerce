@@ -63,7 +63,7 @@
     .containerNavBarResponsive {
         display: block;
         position: relative;
-        left: 85%;
+        left: 88%;
         width: 40px;
         height: 40px;
         background-color: coral;
@@ -76,9 +76,42 @@
         font-size: 25px;
         position: relative;
         left: 22%;
-        
-   
+      
     }
+
+    
+    .containerNavBarResponsive ul {
+        background-color: gray;
+        position: relative;
+        right: 150%;
+        top: -9px;
+        width: 100px;
+        height: 200px;
+        border-radius: 5px;
+        text-align: center;
+       
+
+        
+    }
+
+    .containerNavBarResponsive ul li {
+        list-style: none;
+        margin-top: 17px;
+        padding-top: 5px;
+     
+              
+        
+    }
+
+    .containerNavBarResponsive ul li a {
+        color: white;
+       
+              
+        
+    }
+
+    
+
 
     
 

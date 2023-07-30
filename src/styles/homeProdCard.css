@@ -76,7 +76,7 @@
 .productCard {
     display: inline-block;
     width: 370px;
-    height: 310px;
+    height: 330px;
     padding: 20px;
     box-shadow: 2px 2px 4px 5px gray;
     margin: 15px;
@@ -112,7 +112,7 @@
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
 
     .inputSearch input {
         justify-content: center;
@@ -128,6 +128,7 @@
         width: 310px;
         height: 250px;
         margin: 15px auto;
+        
     }
 
     .imgCard {
