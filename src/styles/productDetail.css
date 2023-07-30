@@ -47,4 +47,10 @@
         object-fit: contain;
 
     }
+
+    .ContainerCard {
+        text-align: center;
+    }
+
+
 }
