@@ -26,7 +26,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             <nav className= "containerNavBarResponsive">
-                <button onClick={toggleMenu}><i classname="fa-solid fa-bars"></i></button>
+                <button onClick={toggleMenu}>☰</button>
                 {isOpen && (
                     <ul>
                         <li><a className="active" href="#/">Inicio</a></li>

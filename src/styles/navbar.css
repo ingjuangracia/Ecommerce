@@ -70,6 +70,16 @@
         border-radius: 5px;
     }
 
+    .containerNavBarResponsive button {
+        background-color: coral;
+        border: coral;
+        font-size: 25px;
+        position: relative;
+        left: 22%;
+        
+   
+    }
+
     
 
      
