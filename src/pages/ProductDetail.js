@@ -72,7 +72,8 @@ const ProductDetail = () => {
                             
                             <img className="imgCard" src={productList.productImgs[2]} alt="" />
                             <h4>{productList.title}</h4>
-                            <h4> Price $ {product.price}</h4>
+                            <h4> Price $ {product?.price}</h4>
+                          
 
 
                         </li>
