@@ -51,11 +51,12 @@
     }
 
     .productCard {
-       text-align: center;
+        width: 310px;
+        height: 250px;
+        margin: 15px auto;
+        
     }
 
-
-  
 
 
 }
