@@ -25,8 +25,6 @@ const Home = () => {
     const addProductCart = () => {
         const productCart = {
             id,
-
-
         };
         dispatch(addToCart(productCart));
     };

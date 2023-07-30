@@ -40,7 +40,7 @@
     border-radius: 5px;
     width: 300px;
     height: 22px;
-   
+
 }
 
 .inputSearch button {
@@ -115,22 +115,19 @@
 @media screen and (max-width:800px) {
 
     .inputSearch input {
-      justify-content: center;
-      width: 180px;
-     
-       
+        justify-content: center;
+        width: 180px;
+
     }
 
     .inputSearch input {
-      
         justify-content: center;
-       
-         
-      }
+    }
 
     .productCard {
         width: 310px;
         height: 250px;
+        margin: 15px auto;
     }
 
     .imgCard {
@@ -139,9 +136,11 @@
         object-fit: contain;
     }
 
-    .productCard {
-        margin: 15px auto;
+    .productCard button {
+        margin-top: 10px;
     }
+
+   
 
 
 
