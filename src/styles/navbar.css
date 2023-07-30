@@ -48,3 +48,14 @@
     transition: ease-in .1s;
 }
 
+
+@media screen and (max-width:800px) {
+    .navBar  {
+        display: none;
+    
+    }
+
+ 
+    
+}
+
