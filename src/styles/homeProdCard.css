@@ -112,12 +112,15 @@
 
 
 @media screen and (max-width:800px) {
+
+    .containerHome {
+        width: 100vh;
+    }
     .productCard {
         width: 310px;
         height: 250px;
         
-       
-    
+      
     }
 
     .imgCard {
