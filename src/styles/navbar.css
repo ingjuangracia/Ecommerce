@@ -63,19 +63,18 @@
     .containerNavBarResponsive {
         display: block;
         position: relative;
-        left: 85%;
-        margin: 10px;
+        left: 90%;
         width: 30px;
         height: 30px;
         background-color: coral;
-        color: #fff;
-        padding: 5px 10px;
         border-radius: 5px;
-       
-        
-       
     }
 
+    
+
+     
+
+    
 
     .containerNavBar h1 {
         text-align: center;

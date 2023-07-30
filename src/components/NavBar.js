@@ -25,8 +25,8 @@ const NavBar = () => {
                     <li><a href="button" onClick={logout}>Log Out</a></li>
                 </ul>
             </nav>
-            <nav className='containerNavBarResponsive'>
-                <button onClick={toggleMenu}><i class="fa-solid fa-bars"></i></button>
+            <nav className= "containerNavBarResponsive">
+                <button onClick={toggleMenu}><i classname="fa-solid fa-bars"></i></button>
                 {isOpen && (
                     <ul>
                         <li><a className="active" href="#/">Inicio</a></li>
