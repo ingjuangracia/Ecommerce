@@ -1,5 +1,6 @@
 import React from 'react';
-import "../styles/navbar.css";
+import "../styles/navbar.css"
+ 
 
 
 
@@ -20,6 +21,8 @@ const NavBar = () => {
                     <li><a href="button" onClick={logout}>Log Out</a></li>
                 </ul>
             </nav>
+
+
         </div>
     );
 };

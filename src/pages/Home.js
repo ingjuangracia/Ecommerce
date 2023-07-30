@@ -31,9 +31,6 @@ const Home = () => {
         dispatch(addToCart(productCart));
     };
 
-
-
-
     useEffect(() => {
         dispatch(getProducts());
 

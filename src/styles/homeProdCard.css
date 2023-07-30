@@ -40,6 +40,7 @@
     border-radius: 5px;
     width: 300px;
     height: 22px;
+   
 }
 
 .inputSearch button {
@@ -86,21 +87,21 @@
 
 .productCard:hover {
     background-color: lightgray;
-    
+
 }
 
 .productCard-title {
     text-align: left;
     font-size: 14px;
-  
-   
+
+
 }
 
 .productCard-price {
     text-align: left;
     font-size: 18px;
     margin-top: 5px;
-    
+
 
 }
 
@@ -113,12 +114,23 @@
 
 @media screen and (max-width:800px) {
 
-   
+    .inputSearch input {
+      justify-content: center;
+      width: 180px;
+     
+       
+    }
+
+    .inputSearch input {
+      
+        justify-content: center;
+       
+         
+      }
+
     .productCard {
         width: 310px;
         height: 250px;
-        
-      
     }
 
     .imgCard {
@@ -126,7 +138,11 @@
         height: 130px;
         object-fit: contain;
     }
-   
-    
-}
 
+    .productCard {
+        margin: 15px auto;
+    }
+
+
+
+}
