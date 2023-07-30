@@ -24,6 +24,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
     color: blue;
+    text-align: center;
 }
 
 .productDetailCont h3 {
@@ -37,6 +38,7 @@
     width: 400px;
     height: 300px;
     object-fit: contain;
+    
 }
 
 @media screen and (max-width:800px) {
@@ -48,9 +50,13 @@
 
     }
 
-    .ContainerCard {
-        text-align: center;
+    .productCard {
+        margin: 10px auto;
+        
     }
+
+
+  
 
 
 }
