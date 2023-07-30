@@ -74,7 +74,7 @@
 
 .productCard {
     display: inline-block;
-    width: 380px;
+    width: 370px;
     height: 310px;
     padding: 20px;
     box-shadow: 2px 2px 4px 5px gray;
@@ -105,7 +105,25 @@
 }
 
 .imgCard {
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     object-fit: contain;
+}
+
+@media screen and (max-width:800px) {
+    .productCard {
+        width: 350px;
+        height: 300px;
+        
+       
+    
+    }
+
+    .imgCard {
+        width: 250px;
+        height: 200px;
+        object-fit: contain;
+    }
+   
+    
 }

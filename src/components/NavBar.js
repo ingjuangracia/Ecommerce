@@ -7,7 +7,7 @@ const NavBar = () => {
 
     const logout = () => localStorage.setItem("token", "");
 
-
+   
     return (
         <div className="containerNavBar">
             <h1>e-commerce</h1>
@@ -20,9 +20,6 @@ const NavBar = () => {
                     <li><a href="button" onClick={logout}>Log Out</a></li>
                 </ul>
             </nav>
-
-
-
         </div>
     );
 };
