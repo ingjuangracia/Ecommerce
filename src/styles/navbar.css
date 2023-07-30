@@ -1,3 +1,8 @@
+.containerNavBarResponsive {
+    display: none;
+}
+
+
 .containerNavBar h1 {
     margin: 10px 50px;
     font-size: 40px;
@@ -10,8 +15,8 @@
     padding: 1em;
     background-color: coral;
     box-shadow: 2px 2px 5px 3px grey;
-    
-    
+
+
 }
 
 .menuBar {
@@ -24,7 +29,7 @@
     font-size: 16px;
     color: blue;
     text-decoration: none;
-    padding: 4px 10px;    
+    padding: 4px 10px;
 }
 
 .menuBar li {
@@ -42,7 +47,7 @@
 .menuBar a:hover {
     background-color: yellow;
     color: black;
-    font-size: 18px ;
+    font-size: 18px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 3px grey;
     transition: ease-in .1s;
@@ -50,16 +55,32 @@
 
 
 @media screen and (max-width:800px) {
-    .navBar  {
+    .navBar {
         display: none;
-    
+
     }
+
+    .containerNavBarResponsive {
+        display: block;
+        position: relative;
+        left: 85%;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: coral;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+       
+        
+       
+    }
+
 
     .containerNavBar h1 {
         text-align: center;
     }
 
- 
-    
-}
 
+
+}

@@ -13,7 +13,6 @@ const AddCart = () => {
 
     const navigate = useNavigate();
 
-
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -22,8 +21,7 @@ const AddCart = () => {
 
     }, [dispatch]);
 
-
-    
+   
     return (
         <div className="containerCart">
             <h1>My Cart</h1>
