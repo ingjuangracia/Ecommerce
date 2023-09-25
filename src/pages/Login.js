@@ -12,7 +12,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const submit = data => {
-        axios.post("https://e-commerce-api.academlo.tech/api/v1/users/login", data)
+        axios.post("https://e-commerce-api-v2.academlo.tech/api/v1/users/login", data)
             .then(res => {
                 console.log(res.data, data.token)
                 localStorage.setItem("token", res.data.data.token)

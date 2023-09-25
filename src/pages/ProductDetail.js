@@ -19,15 +19,17 @@ const ProductDetail = () => {
 
     const productsList = useSelector(state => state.products);
 
+    console.log(productsList);
+
     useEffect(() => {
-        axios.get(`https://e-commerce-api.academlo.tech/api/v1/products`)
+        axios.get("https://e-commerce-api-v2.academlo.tech/api/v1/products")
             .then(res => {
-                console.log(res.data.data.products)
-                res.data.data.products.find(productItem => productItem.id === Number(id))
-                const productSearched = res.data.data.products.find(productItem => productItem.id === Number(id))
+                console.log(res.data)
+                res.data.find(productItem => productItem.id === Number(id))
+                const productSearched = res.data.find(productItem => productItem.id === Number(id))
                 console.log(productSearched);
                 setProduct(productSearched);
-                dispatch(filterCategory(productSearched?.category.id));
+                dispatch(filterCategory(productSearched?.categoryId));
             });
 
     }, [id, dispatch])
@@ -52,7 +54,7 @@ const ProductDetail = () => {
             <h1>Product Details</h1>
             <h2>{product?.title}</h2>
             <h3>{product?.description}</h3>
-            <img className="imgProductDetail" src={product?.productImgs?.[1]} alt="" />
+            <img className="imgProductDetail" src={product?.images?.[0].url} alt="" />
             <h3>Price $ {product?.price}</h3>
             <input
                 type="number"
@@ -68,9 +70,9 @@ const ProductDetail = () => {
                 {
 
                     productsList?.map(productList => (
-                        <li className="productCard" onClick={() => navigate(`/product/${productList.id}`)}>
+                        <li key={productList.id} className="productCard" onClick={() => navigate(`/product/${productList.id}`)}>
 
-                            <img className="imgCard" src={productList.productImgs[2]} alt="" />
+                            <img className="imgCard" src={productList.images[0].url} alt="" />
                             <h4>{productList.title}</h4>
                             <h4> Price $ {product?.price}</h4>
                         </li>

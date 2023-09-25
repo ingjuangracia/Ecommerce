@@ -22,6 +22,8 @@ const Home = () => {
 
     const products = useSelector(state => state.products)
 
+    console.log(products);
+
     const addProductCart = () => {
         const productCart = {
             id,
@@ -32,8 +34,8 @@ const Home = () => {
     useEffect(() => {
         dispatch(getProducts());
 
-        axios.get("https://e-commerce-api.academlo.tech/api/v1/products/categories")
-            .then(res => setCategories(res.data.data.categories))
+        axios.get("https://e-commerce-api-v2.academlo.tech/api/v1/categories")
+            .then(res => setCategories(res.data))
 
     }, [dispatch]);
 
@@ -46,7 +48,7 @@ const Home = () => {
 
     }
 
-    console.log(categories)
+    //console.log(categories)
 
     return (
         <div className="containerHome">
@@ -54,7 +56,7 @@ const Home = () => {
                 <h2>Categories</h2>
                 {
                     categories?.map(category => (
-                        <li className="categoryName" key={category.id} onClick={() => selecCategory(category.id)}>
+                        <li className="categoryName" key={category.id} onClick={() => selecCategory(category.categoryId)}>
                             {category.name}
                         </li>
                     ))
@@ -75,7 +77,7 @@ const Home = () => {
                 {
                     products.map(product => (
                         <li className="productCard" key={product.id} onClick={() => navigate(`product/${product.id}`)}>
-                            <img className="imgCard" src={product.productImgs[2]} alt="" />
+                            <img className="imgCard" src={product.images[0].url} alt="" />
                             <h4 className='productCard-title'>{product.title}</h4>
                             <h4 className='productCard-price'> Price $ {product.price}</h4>
                             <button onClick={addProductCart}>Add to Cart</button>
